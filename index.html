@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakir Dawood - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="terminal-prompt">$</span>
+                <span class="brand-text">bakir.dev</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">home</a>
+                <a href="#about" class="nav-link">about</a>
+                <a href="#resume" class="nav-link">resume</a>
+                <a href="#projects" class="nav-link">projects</a>
+                <a href="#creative" class="nav-link">creative</a>
+                <a href="#contact" class="nav-link">contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">bakir@portfolio:~$</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="terminal-output">
+                        <h1 class="hero-name">Bakir Dawood</h1>
+                        <p class="hero-title">Software Developer | Author | Cinematographer</p>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">cat intro.txt</span>
+                    </div>
+                    <div class="terminal-output">
+                        <p class="hero-description">
+                            Crafting digital experiences through code, storytelling through words, 
+                            and capturing moments through the lens. Welcome to my digital space.
+                        </p>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="cursor">_</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="cta-button primary">
+                    <i class="fas fa-code"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="cta-button secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">01.</span>
+                    About Me
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="file-name">about.js</span>
+                            <div class="code-actions">
+                                <i class="fas fa-copy"></i>
+                            </div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">const</span> <span class="variable">bakir</span> = {
+  <span class="property">role</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">passions</span>: [<span class="string">"coding"</span>, <span class="string">"writing"</span>, <span class="string">"filmmaking"</span>],
+  <span class="property">currentFocus</span>: <span class="string">"AI & Machine Learning"</span>,
+  <span class="property">location</span>: <span class="string">"Remote"</span>,
+  
+  <span class="function">getSkills</span>() {
+    <span class="keyword">return</span> [
+      <span class="string">"Python"</span>, <span class="string">"JavaScript"</span>, <span class="string">"React"</span>,
+      <span class="string">"Node.js"</span>, <span class="string">"Machine Learning"</span>
+    ];
+  },
+  
+  <span class="function">getCreativeWork</span>() {
+    <span class="keyword">return</span> {
+      <span class="property">book</span>: <span class="string">"Unerring Melancholy"</span>,
+      <span class="property">medium</span>: <span class="string">"Cinematography"</span>
+    };
+  }
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <p>
+                            I'm a passionate software developer who believes in the power of technology 
+                            to solve real-world problems. With expertise spanning full-stack development, 
+                            machine learning, and AI, I create solutions that make a difference.
+                        </p>
+                        <p>
+                            Beyond code, I explore the art of storytelling through writing and cinematography. 
+                            My book "Unerring Melancholy" reflects my journey through creative expression, 
+                            while my cinematography work captures the beauty in everyday moments.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Coding</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Book Published</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Ideas Brewing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    Resume
+                </h2>
+            </div>
+            <div class="resume-content">
+                <div class="resume-card">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resume-info">
+                        <h3>Professional Resume</h3>
+                        <p>Download my latest resume to learn more about my experience, skills, and achievements.</p>
+                        <div class="resume-meta">
+                            <span><i class="fas fa-calendar"></i> Updated: December 2024</span>
+                            <span><i class="fas fa-file-alt"></i> PDF Format</span>
+                        </div>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="#" class="resume-btn download" id="downloadResume">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                        <a href="#" class="resume-btn view" id="viewResume">
+                            <i class="fas fa-eye"></i>
+                            Preview
+                        </a>
+                    </div>
+                </div>
+                <div class="resume-upload">
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop resume file here or <span class="upload-link">browse</span></p>
+                        <input type="file" id="resumeFile" accept=".pdf" hidden>
+                        <small>Supports PDF files up to 10MB</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    Featured Projects
+                </h2>
+                <p class="section-subtitle">Some things I've built</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Facial Recognition System</h3>
+                        <p class="project-description">
+                            Advanced facial recognition system built with Python and OpenCV. 
+                            Features real-time detection, face encoding, and recognition with 
+                            high accuracy rates. Includes a web interface for easy management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Programmer Space Platform</h3>
+                        <p class="project-description">
+                            A comprehensive platform for developers to share code, collaborate on projects, 
+                            and learn together. Features include code sharing, real-time collaboration, 
+                            project management, and community discussions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Content Generator</h3>
+                        <p class="project-description">
+                            Machine learning powered content generation tool that creates 
+                            high-quality articles, social media posts, and marketing copy 
+                            using natural language processing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">GPT-3</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Task Manager</h3>
+                        <p class="project-description">
+                            Intelligent task management application with AI-powered priority 
+                            suggestions, deadline predictions, and productivity analytics. 
+                            Built with modern web technologies.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blockchain Voting System</h3>
+                        <p class="project-description">
+                            Secure and transparent voting system built on blockchain technology. 
+                            Ensures vote integrity, anonymity, and real-time result tracking 
+                            with immutable records.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">Web3.js</span>
+                            <span class="tech-tag">Ethereum</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-time Chat Application</h3>
+                        <p class="project-description">
+                            Modern chat application with real-time messaging, file sharing, 
+                            group chats, and end-to-end encryption. Features a clean, 
+                            responsive interface with dark mode support.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Work Section -->
+    <section id="creative" class="creative">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">04.</span>
+                    Creative Work
+                </h2>
+                <p class="section-subtitle">Beyond the code</p>
+            </div>
+            <div class="creative-content">
+                <div class="creative-item book">
+                    <div class="creative-image">
+                        <div class="book-cover">
+                            <div class="book-spine"></div>
+                            <div class="book-front">
+                                <h4>Unerring Melancholy</h4>
+                                <p>by Bakir Dawood</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Unerring Melancholy</h3>
+                        <p class="creative-type">Published Book</p>
+                        <p class="creative-description">
+                            A deeply personal exploration of human emotions, relationships, and the 
+                            complexities of modern life. This collection of stories and reflections 
+                            delves into the beauty found in melancholy and the strength discovered 
+                            in vulnerability.
+                        </p>
+                        <div class="creative-links">
+                            <a href="#" class="creative-link">
+                                <i class="fas fa-book"></i>
+                                Read Sample
+                            </a>
+                            <a href="#" class="creative-link">
+                                <i class="fas fa-shopping-cart"></i>
+                                Purchase
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creative-item cinematography">
+                    <div class="creative-info">
+                        <h3>Cinematography Reel</h3>
+                        <p class="creative-type">Visual Storytelling</p>
+                        <p class="creative-description">
+                            A collection of my cinematography work showcasing various projects 
+                            from short films to commercial work. Each piece tells a unique story 
+                            through careful composition, lighting, and visual narrative.
+                        </p>
+                        <div class="creative-links">
+                            <a href="#" class="creative-link">
+                                <i class="fab fa-youtube"></i>
+                                Watch Reel
+                            </a>
+                            <a href="#" class="creative-link">
+                                <i class="fas fa-camera"></i>
+                                View Gallery
+                            </a>
+                        </div>
+                    </div>
+                    <div class="creative-image">
+                        <div class="video-placeholder">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-overlay">
+                                <span>Cinematography Reel 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">05.</span>
+                    Get In Touch
+                </h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="terminal-contact">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">contact.sh</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command">./contact.sh --info</span>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <span class="contact-label">email:</span>
+                                    <a href="mailto:bakir.dawood@email.com" class="contact-value">
+                                        bakir.dawood@email.com
+                                    </a>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">linkedin:</span>
+                                    <a href="https://linkedin.com/in/bakirdawood" class="contact-value">
+                                        /in/bakirdawood
+                                    </a>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">github:</span>
+                                    <a href="https://github.com/bakirdawood" class="contact-value">
+                                        @bakirdawood
+                                    </a>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">status:</span>
+                                    <span class="contact-value status-available">
+                                        Available for opportunities
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="cursor">_</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>
+                        I'm always interested in new opportunities, creative collaborations, 
+                        and interesting projects. Whether you have a question, want to work 
+                        together, or just want to say hello, I'd love to hear from you.
+                    </p>
+                    <div class="contact-cta">
+                        <a href="mailto:bakir.dawood@email.com" class="cta-button primary">
+                            <i class="fas fa-envelope"></i>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Bakir Dawood. Built with passion and lots of coffee.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/bakirdawood" class="footer-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/bakirdawood" class="footer-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:bakir.dawood@email.com" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
