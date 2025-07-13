@@ -377,8 +377,9 @@ section:first-child {
 /* About Section */
 .about {
     background: var(--bg-secondary);
-    margin-top: 0;
-    padding-top: 6rem;
+    margin-top: 2rem;
+    padding-top: 8rem;
+    scroll-margin-top: 80px;
 }
 
 .about-content {

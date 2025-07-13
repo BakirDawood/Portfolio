@@ -48,7 +48,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+            const offsetTop = target.offsetTop - 100; // Account for fixed navbar + extra space
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -66,7 +66,7 @@ window.addEventListener('scroll', () => {
     
     sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 100) {
+        if (rect.top <= 120 && rect.bottom >= 120) {
             currentSection = section.getAttribute('id');
         }
     });
