@@ -59,8 +59,8 @@ To run the website locally:
 3. Customize the content and images as needed.
 
 ```bash
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/BakirDawood/Portfolio.git
+cd Portfolio
 ```
 
 > ✍️ Tip: You can use **VS Code Live Server** for development preview.
