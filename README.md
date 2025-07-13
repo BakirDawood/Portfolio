@@ -7,7 +7,7 @@ A clean, modern, and responsive developer portfolio website with built-in **ligh
 
 ## 🌐 Live Demo
 
-*Coming soon…* (Upload your project to GitHub Pages, Netlify, or Vercel and add the link here.)
+*bakirdawood.netlify.app
 
 ---
 
