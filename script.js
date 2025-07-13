@@ -91,14 +91,16 @@ window.addEventListener('scroll', () => {
 
 // Scroll Animations
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.15,
+    rootMargin: '0px 0px -100px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Unobserve after animation to prevent re-triggering
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
@@ -106,13 +108,49 @@ const observer = new IntersectionObserver((entries) => {
 // Add fade-in class to elements and observe them
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll(
-        '.project-card, .stat-item, .creative-item, .resume-card, .about-description'
+        '.project-card, .stat-item, .creative-item, .resume-card, .about-description, .code-block'
     );
     
     animateElements.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
     });
+    
+    // Special handling for about section elements
+    const aboutSection = document.querySelector('#about');
+    if (aboutSection) {
+        const aboutObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Trigger animations for about section elements with staggered timing
+                    const codeBlock = aboutSection.querySelector('.code-block');
+                    const description = aboutSection.querySelector('.about-description');
+                    const statItems = aboutSection.querySelectorAll('.stat-item');
+                    
+                    setTimeout(() => {
+                        if (codeBlock) codeBlock.classList.add('visible');
+                    }, 100);
+                    
+                    setTimeout(() => {
+                        if (description) description.classList.add('visible');
+                    }, 300);
+                    
+                    statItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('visible');
+                        }, 500 + (index * 100));
+                    });
+                    
+                    aboutObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        aboutObserver.observe(aboutSection);
+    }
 });
 
 // Typewriter Effect for Terminal

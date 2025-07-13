@@ -995,12 +995,45 @@ section {
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.6s ease;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Staggered animation delays for about section elements */
+.about-description.fade-in {
+    transition-delay: 0.2s;
+}
+
+.stat-item.fade-in:nth-child(1) {
+    transition-delay: 0.3s;
+}
+
+.stat-item.fade-in:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.stat-item.fade-in:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+.stat-item.fade-in:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+/* Enhanced code block animation */
+.code-block {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.code-block.visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Responsive Design */
